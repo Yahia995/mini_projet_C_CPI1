@@ -52,10 +52,17 @@ Ce projet implémente un système de gestion de trafic aérien pour un aéroport
   ./bin/aeroport
   ```
 3. Utiliser le menu principal:
+   
   Menu Général
+  
   1 - Création du répertoire Avion
+  
   2 - Mise à jour des Avions
+  
   3 - Recherche, affichage et Tri
+  
   4 - Enregistrement dans un fichier
+  
   5 - Chargement d'un fichier
+  
   6 - Quitter
