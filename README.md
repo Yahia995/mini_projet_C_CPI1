@@ -18,15 +18,18 @@ Ce projet implémente un système de gestion de trafic aérien pour un aéroport
   - Affichage structuré des données
 
 ## 📁 Structure des fichiers
-projet-aeroport-gestion/
-├── src/
-│ ├── main.c # Programme principal
-│ ├── aeroport.h # Déclarations des structures
-│ ├── aeroport.c # Implémentation des fonctions
-│ └── rep.txt # Fichier de données exemple
-├── docs/
-│ └── projet-avion.pdf # Énoncé du projet
-└── README.md # Ce fichier
+
+📁 projet-aeroport-gestion
+├── 📁 src/ # Source Code
+│ ├── 📄 main.c # Main program flow
+│ ├── 📄 aeroport.h # Data structures declarations
+│ ├── 📄 aeroport.c # Business logic implementation
+│ └── 📄 rep.txt # Sample aircraft data
+│
+├── 📁 docs/ # Documentation
+│ └── 📄 projet-avion-1.pdf# Project statement (PDF)
+│
+└── 📄 README.md # Project documentation
 
 ## 🛠️ Compilation et exécution
 
