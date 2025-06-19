@@ -22,9 +22,7 @@ Ce projet implémente un système de gestion de trafic aérien pour un aéroport
 📁 projet-aeroport-gestion
 
 ├── 📁 src/ # Source Code
-
 │ ├── 📄 main.c # Main program flow
-
 │ ├── 📄 aeroport.h # Data structures declarations
 │ ├── 📄 aeroport.c # Business logic implementation
 │ └── 📄 rep.txt # Sample aircraft data
