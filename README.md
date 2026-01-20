@@ -1,68 +1,98 @@
-# 🛫 Gestion d'Aéroport - Projet C
+# 🛫 Gestion de Trafic Aéroportuaire — Projet C
 
-Ce projet implémente un système de gestion de trafic aérien pour un aéroport avec une seule piste. Développé en C, il permet de gérer les avions, les compagnies aériennes et les opérations associées via une interface menu.
+![C Language](https://img.shields.io/badge/language-C-blue)
+![Status](https://img.shields.io/badge/status-stable-green)
+![Platform](https://img.shields.io/badge/platform-linux%20%7C%20windows%20%7C%20macos-lightgrey)
 
-## ✨ Fonctionnalités
+Ce projet implémente un **système robuste de gestion de trafic aérien** pour un **aéroport à piste unique**. Il permet de piloter l'ensemble des opérations aéroportuaires — de la gestion des compagnies à la planification des décollages — en s'appuyant sur des **structures de données dynamiques en langage C**.
 
-- **Gestion des avions**:
-  - Création/suppression/modification d'avions
-  - Validation des identifiants (3 lettres + 3 chiffres)
-  - Contrôle des heures de décollage
-- **Opérations sur liste chaînée**:
-  - Insertion/suppression en tête/queue/position
-  - Recherche et tri
-- **Persistance des données**:
-  - Sauvegarde/chargement depuis un fichier
-- **Interface utilisateur**:
-  - Menus interactifs avec validation des entrées
-  - Affichage structuré des données
+---
 
-## 📁 Structure des fichiers
+## 🚀 Fonctionnalités clés
 
-📁 projet-aeroport-gestion
+### ✈️ Gestion des vols & avions
 
-├── 📁 src/ # Source Code
+* **Identifiants stricts** : validation automatique du format (ex. `AFR123` — 3 lettres + 3 chiffres).
+* **Planification** : contrôle rigoureux des horaires de décollage.
+* **Cycle de vie complet** : création, modification et suppression des fiches avions.
 
-│ ├── 📄 main.c # Main program flow
+### 🧠 Logique de données
 
-│ ├── 📄 aeroport.h # Data structures declarations
+* **Listes chaînées** : manipulation dynamique (insertion et suppression en tête, en queue ou à une position spécifique).
+* **Algorithmes** : fonctions de recherche optimisées et algorithmes de tri.
 
-│ ├── 📄 aeroport.c # Business logic implementation
+### 💾 Persistance & interface
 
-│ └── 📄 rep.txt # Sample aircraft data
+* **Sauvegarde** : exportation et importation via fichiers texte (`.txt`).
+* **Menu interactif** : interface console ergonomique avec gestion robuste des erreurs de saisie.
 
-│
+---
 
-├── 📁 docs/ # Documentation
+## 📂 Organisation du projet
 
-│ └── 📄 projet-avion-1.pdf# Project statement (PDF)
+```text
+.
+├── src/                  # Code source
+│   ├── main.c            # Point d'entrée et menu principal
+│   ├── aeroport.h        # Structures de données et prototypes
+│   └── aeroport.c        # Implémentation de la logique métier
+├── data/                 # Stockage des données
+│   └── rep.txt           # Base de données des avions (exemple)
+├── docs/                 # Documentation technique
+│   └── projet-avion-1.pdf# Énoncé détaillé
+└── README.md
+```
 
-│
+---
 
-└── 📄 README.md # Project documentation
+## 🛠️ Installation et utilisation
 
-## 🛠️ Compilation et exécution
+### Prérequis
 
-1. Compiler le projet:
-  ```bash
-  gcc src/main.c src/aeroport.c -o bin/aeroport
-  ```
-2. Exécuter:
-  ```bash
-  ./bin/aeroport
-  ```
-3. Utiliser le menu principal:
-   
-  Menu Général
-  
-  1 - Création du répertoire Avion
-  
-  2 - Mise à jour des Avions
-  
-  3 - Recherche, affichage et Tri
-  
-  4 - Enregistrement dans un fichier
-  
-  5 - Chargement d'un fichier
-  
-  6 - Quitter
+* Un compilateur C (**GCC recommandé**).
+* Un environnement compatible **POSIX** (Linux, macOS) ou **MinGW** pour Windows.
+
+### 1️⃣ Compilation
+
+```bash
+gcc src/main.c src/aeroport.c -o aeroport_manager
+```
+
+### 2️⃣ Exécution
+
+```bash
+./aeroport_manager
+```
+
+---
+
+## 🖥️ Aperçu du menu principal
+
+L'application est pilotée par un **menu interactif** structuré comme suit :
+
+1️⃣ **Répertoire** — Initialisation de la base de données
+2️⃣ **Mise à jour** — Ajouter, modifier ou retirer un avion
+3️⃣ **Consultation** — Recherche multicritère, affichage et tri des vols
+4️⃣ **Export** — Sauvegarder l'état actuel dans un fichier externe
+5️⃣ **Import** — Charger les données depuis un fichier existant
+0️⃣ **Quitter** — Fermeture sécurisée de l'application
+
+---
+
+## 📝 Format des données
+
+Le fichier de sauvegarde utilise une structure simple pour une lecture et un traitement faciles :
+
+```text
+ID_AVION | COMPAGNIE | DESTINATION | HEURE_DECOLLAGE
+```
+
+---
+
+## 🎓 Contexte académique
+
+Projet développé dans le cadre du **module de Programmation en Langage C**.
+
+---
+
+✨ *Ce projet met l'accent sur la rigueur algorithmique, la gestion mémoire et la structuration modulaire du code en C.*
